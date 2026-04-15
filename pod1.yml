@@ -1,0 +1,27 @@
+---
+- name: Create a Pod in Kubernetes
+  hosts: k8s
+  gather_facts: no
+
+  collections:
+    - community.kubernetes
+
+  tasks:
+    - name: Create a pod
+      k8s:
+        state: present
+        definition:
+          apiVersion: v1
+          kind: Pod
+          metadata:
+            name: croma-pod
+            namespace: default
+          spec:
+            containers:
+              - name: pankaj-cont-01
+                image: ubuntu:latest
+                command: ["sleep", "3600"]
+
+              - name: sharma-ji-cont-02
+                image: ubuntu:latest
+                command: ["sleep", "3600"]

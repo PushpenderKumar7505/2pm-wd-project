@@ -1,6 +1,6 @@
 ---
 - name: Create a Pod in Kubernetes
-  hosts: k8s
+  hosts: all
   gather_facts: no
 
   collections:

@@ -93,4 +93,4 @@ Infrastructure automation using Ansible
 Pushpender Kumar
 
 GitHub Repository:
-https://github.com/PushpenderKumar7505/2pm-wd-project
+https://github.com/PushpenderKumar7505/Devops-automation-jenkins-ansible

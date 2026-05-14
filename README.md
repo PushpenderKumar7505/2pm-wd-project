@@ -64,7 +64,7 @@ node {
 
   stage('Github connect') {
     git branch: 'main',
-    url: 'https://github.com/PushpenderKumar7505/2pm-wd-project.git'
+    url: 'https://github.com/PushpenderKumar7505/Devops-automation-jenkins-ansible.git'
   }
 
   stage('ansible-server') {
